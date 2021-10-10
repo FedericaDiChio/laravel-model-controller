@@ -1,0 +1,32 @@
+.card-container {
+    @include center;
+    flex-wrap: wrap;
+    .card-box {
+        background-color: $white;
+        margin: 20px;
+        border-radius: 0 20px;
+        box-shadow: 5px 5px 5px #888888;
+        width: 200px;
+        min-height: 200px;
+        padding-top: 70px;
+        padding-left: 10px;
+        position: relative;
+        .card-title {
+            width: 200px;
+            height: 50px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            border-radius: 0 20px 0 0;
+            background-color:  rgb(93, 138, 150);
+            @include center;
+            h4 {
+                color: $white;
+                text-align: center;
+            }
+        }
+    }
+  
+
+}

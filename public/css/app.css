@@ -1,1 +1,66 @@
-@import "~bootstrap/scss/bootstrap";
+@import url(https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Raleway:wght@300&family=Satisfy&display=swap);@import url(https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Satisfy&display=swap);* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background-image: url("/images/pellicola.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  font-family: "Raleway", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: "Satisfy", cursive;
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 30px;
+  font-size: 50px;
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card-container .card-box {
+  background-color: white;
+  margin: 20px;
+  border-radius: 0 20px;
+  box-shadow: 5px 5px 5px #888888;
+  width: 200px;
+  min-height: 200px;
+  padding-top: 70px;
+  padding-left: 10px;
+  position: relative;
+}
+
+.card-container .card-box .card-title {
+  width: 200px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 0 20px 0 0;
+  background-color: #5d8a96;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-container .card-box .card-title h4 {
+  color: white;
+  text-align: center;
+}
+

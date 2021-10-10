@@ -9,16 +9,13 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Movies</h1>
-    <div> 
-        @foreach ($movies as $movie) 
-            <h2>Titolo: {{ $movie->title }}</h2>
-            <address>Titolo originale: {{ $movie->original_title }}</address>
-            <p>Paese: {{ $movie->nationality}}</p>
-            <time>Data: {{ $movie->date }}</time>
-            <p>Voto: {{ $movie->vote }}</p>
-        @endforeach
-    </div>        
+    <header></header>
+    <main class="container">
+        @yield('content')
+        <h1>My Movies</h1>
+            @include('includes.cards')
+    </main>   
+    <footer></footer>             
 </div>
 </body>
 </html>
